@@ -1,0 +1,17 @@
+# iOS device/simulator configuration
+platform: ios
+platformVersion: "17.2"
+deviceName: "iPhone 15"               # simulator name or real device name
+udid: ""                               # leave empty for simulator; required for real device
+bundleId: "com.wizzair.WizzAirApp"
+appPath: ""                            # absolute path to .ipa / .app; empty = use installed
+appiumServerUrl: "http://127.0.0.1:4723"
+automationName: "XCUITest"
+newCommandTimeout: 300
+autoAcceptAlerts: false                # we handle permissions explicitly
+noReset: false
+fullReset: false
+deepLinkScheme: "wizzair"
+# XCUITest extras
+wdaLaunchTimeout: 120000
+wdaConnectionTimeout: 120000

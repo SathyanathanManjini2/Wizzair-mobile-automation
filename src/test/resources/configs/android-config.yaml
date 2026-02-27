@@ -1,0 +1,16 @@
+# Android device/emulator configuration
+platform: android
+platformVersion: "13.0"
+deviceName: "Pixel_7_API_33"          # emulator AVD name or real device name
+udid: ""                                # leave empty for emulator; set for real device
+appPackage: "com.wizzair.WizzAirApp"
+appActivity: ".activity.MainActivity"
+appPath: ""                             # absolute path to .apk; empty = use installed app
+appiumServerUrl: "http://127.0.0.1:4723"
+automationName: "UiAutomator2"
+newCommandTimeout: 300
+autoGrantPermissions: false             # we handle permissions explicitly in tests
+noReset: false
+fullReset: false
+# Deep-link scheme used by Wizz Air
+deepLinkScheme: "wizzair"
